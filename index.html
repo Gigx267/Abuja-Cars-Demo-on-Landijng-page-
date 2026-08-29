@@ -1,158 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abuja Cars - Buy & Drive</title>
+  <title>Abuja Cars — Driven by Dreams</title>
   
-   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
-  <!-- ===== SEO & Meta ===== -->
-  
-  <meta name="description" content="Abuja Cars is the most trusted car dealership in Africa. 
-  Visit us for unbeatable collection ." />
+  <meta name="description" content="Abuja Cars — Precision engineering meets luxury automotive curation in Abuja, Nigeria." />
   <link rel="canonical" href="https://abujacars.com" />
-  <meta property="og:title" content="Abuja Cars – Buy & Drive in Abuja" />
-  <meta property="og:description" content="Your #1 car dealership in Abuja. Premium selection, transparent pricing, and expert service. Discover your dream car today." />
+  <meta property="og:title" content="Abuja Cars – Driven by Dreams" />
+  <meta property="og:description" content="Explore an exclusive collection of luxury and high-performance vehicles in Abuja." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://abujacars.com" />
-  <meta name="keywords" content="Abuja cars, car dealership Abuja, buy cars Abuja, Toyota Abuja, Kia Abuja, Honda Abuja, Hyundai Abuja, electric cars Abuja, used cars Abuja, new cars Abuja" />
+  
   <script src="https://cdn.tailwindcss.com"></script>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            sans: ['"Inter"', 'sans-serif'],
+            display: ['"Syne"', 'sans-serif'],
           },
+          colors: {
+            brand: {
+              red: '#D5001C', // Porsche Crimson Accent
+              dark: '#080808',
+              card: '#121212',
+              border: 'rgba(255, 255, 255, 0.1)',
+            }
+          },
+          backgroundImage: {
+            'grid-pattern': "radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px)",
+          }
         },
       },
     }
   </script>
 </head>
-<body class="bg-gray-100 font-sans text-gray-900 antialiased selection:bg-purple-500 selection:text-white">
+<body class="bg-brand-dark font-sans text-gray-200 antialiased selection:bg-brand-red selection:text-white overflow-x-hidden relative">
 
-  <header class="relative w-full min-h-[600px] lg:h-screen bg-neutral-900 overflow-hidden flex flex-col justify-between">
-    
+  <div class="fixed -top-40 -left-40 w-96 h-96 bg-brand-red/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
+  <div class="fixed top-1/2 -right-40 w-96 h-96 bg-brand-red/5 rounded-full blur-[140px] pointer-events-none z-0"></div>
+
+  <header class="relative w-full h-screen bg-black overflow-hidden flex flex-col justify-between">
     <div class="absolute inset-0 z-0">
-      <img 
-        src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&q=80&w=2000" 
-        alt="Car Front View" 
-        class="w-full h-full object-cover object-center brightness-75 contrast-125"
-      />
-      <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/80"></div>
+      <video 
+        autoplay 
+        loop 
+        muted 
+        playsinline
+        poster="https://i.pinimg.com/1200x/4c/48/17/4c48179bbeda30db6733ee933a0311e0.jpg"
+        class="w-full h-full object-cover"
+      >
+        <source src="https://www.pexels.com/download/video/31588831/" type="video/mp4" />
+      </video>
+      <div class="absolute inset-0 bg-black/60 backdrop-blur-[1px]"></div>
     </div>
 
-    <div class="relative z-10 w-full pt-4 px-4 sm:px-8">
-      <nav class="max-w-6xl mx-auto bg-black/40 backdrop-blur-md rounded-full px-6 py-3 border border-white/10 flex items-center justify-between text-white text-sm">
-        
-        <a href="#" class="font-bold text-base sm:text-lg tracking-wide hover:opacity-90">Abuja Cars</a>
-        
-        <ul class="hidden md:flex items-center space-x-8 text-gray-200 font-medium">
-          <li><a href="#" class="font-bold text-white transition">Home</a></li>
-          <li><a href="#inventory" class="hover:text-white transition">Inventory</a></li>
-          <li class="relative group">
-            <button class="flex items-center gap-1 hover:text-white transition">
-              Manage Car 
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-            </button>
-          </li>
-          <li><a href="#" class="hover:text-white transition">Electric Cars</a></li>
+    <div class="relative z-10 w-full pt-6 px-4 sm:px-12">
+      <nav class="max-w-7xl mx-auto flex items-center justify-between text-white border-b border-white/10 pb-6">
+        <a href="#" class="font-display font-bold text-xl tracking-[0.25em] uppercase hover:opacity-80 transition flex items-center gap-1.5">
+          <span>Abuja</span><span class="w-2 h-2 rounded-full bg-brand-red inline-block shadow-[0_0_10px_#D5001C]"></span><span class="text-gray-400 font-light">Cars</span>
+        </a>
+
+        <ul class="hidden md:flex items-center gap-10 text-[11px] font-semibold tracking-[0.2em] uppercase text-gray-300">
+          <li><a href="#" class="text-white hover:text-brand-red transition">Models</a></li>
+          <li><a href="#inventory" class="hover:text-white transition">Pre-Owned</a></li>
+          <li><a href="#top-brands" class="hover:text-white transition">Heritage</a></li>
+          <li><a href="#" class="hover:text-white transition">E-Performance</a></li>
         </ul>
 
-        <div class="flex items-center space-x-4">
-          <a href="#" class="bg-white/15 hover:bg-white/25 border border-white/20 text-white font-medium px-4 py-2 rounded-full transition text-xs sm:text-sm">
-            Sell through us
+        <div class="flex items-center space-x-6">
+          <a href="#" class="hidden md:inline-block text-[11px] font-semibold tracking-[0.2em] uppercase text-gray-300 hover:text-white transition">
+            Menu
           </a>
-          <button class="md:hidden text-white focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+
+          <button id="menu-btn" class="md:hidden text-white focus:outline-none p-1">
+            <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
           </button>
         </div>
       </nav>
+
+      <div id="mobile-menu" class="hidden md:hidden max-w-7xl mx-auto mt-3 bg-black/95 backdrop-blur-2xl rounded-2xl p-6 border border-brand-border flex flex-col gap-4 text-xs font-semibold tracking-widest uppercase">
+        <a href="#" class="text-white py-2 border-b border-white/5">Models</a>
+        <a href="#inventory" class="text-gray-300 hover:text-white py-2 border-b border-white/5">Pre-Owned</a>
+        <a href="#top-brands" class="text-gray-300 hover:text-white py-2 border-b border-white/5">Heritage</a>
+        <a href="#" class="text-gray-300 hover:text-white py-2">E-Performance</a>
+      </div>
     </div>
 
-    <div class="relative z-10 flex flex-col items-center justify-center text-center px-4 py-20 my-auto">
-      <h1 class="text-4xl sm:text-6xl font-bold text-white tracking-tight mb-4 drop-shadow-md">
-        Buy &amp; Drive
+    <div class="relative z-10 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto my-auto">
+      <h1 class="font-display text-5xl sm:text-7xl font-extrabold text-white tracking-tight mb-4 uppercase">
+        Driven By Dreams
       </h1>
-      <p class="text-gray-300 text-sm sm:text-base max-w-xl font-light mb-8">
-        Browse thousands of inspected pre-owned and brand new vehicles.
+      
+      <p class="text-gray-300 text-xs sm:text-sm max-w-lg font-light tracking-[0.2em] uppercase mb-8">
+        Precision engineering meets luxury curation in Abuja.
       </p>
 
       <div class="relative w-full max-w-md">
         <input 
           type="text" 
-          placeholder="Search for any car" 
-          class="w-full bg-white/10 backdrop-blur-md text-white placeholder-gray-400 text-sm rounded-full px-5 py-3.5 pr-12 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white/40 shadow-lg"
+          placeholder="SEARCH MODELS..." 
+          class="w-full bg-black/40 backdrop-blur-md text-white placeholder-gray-400 text-xs font-medium tracking-widest rounded-full px-6 py-4 border border-white/20 focus:outline-none focus:border-brand-red transition shadow-2xl"
         />
-        <button class="absolute right-1.5 top-1.5 bottom-1.5 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition flex items-center justify-center">
+        <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-brand-red text-white p-2 rounded-full transition duration-300">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
         </button>
       </div>
     </div>
 
-    <div class="relative z-10 flex justify-center pb-6">
-      <a href="#top-brands" class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7-7-7"></path></svg>
+    <div class="relative z-10 flex flex-col items-center justify-center pb-8">
+      <a href="#top-brands" class="flex flex-col items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-gray-400 hover:text-white transition">
+        <span>Scroll</span>
+        <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7-7-7"></path></svg>
       </a>
     </div>
-
-    <div class="w-full h-1 bg-purple-600"></div>
   </header>
 
-  <section id="top-brands" class="py-16 px-4 sm:px-8 max-w-7xl mx-auto">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Top Brands</h2>
-      <p class="text-gray-500 text-sm">Browse new available cars</p>
+  <section id="top-brands" class="py-28 px-4 sm:px-12 max-w-7xl mx-auto relative z-10">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b border-brand-border pb-8">
+      <div>
+        <span class="text-brand-red font-bold text-[11px] tracking-[0.3em] uppercase block mb-1">Manufacturer Lineup</span>
+        <h2 class="font-display text-4xl sm:text-6xl font-extrabold text-white tracking-tight uppercase">Top Brands</h2>
+      </div>
+      <p class="text-gray-400 text-xs tracking-[0.2em] uppercase mt-4 md:mt-0 font-light">Select a marquee to inspect models</p>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       
-      <div class="group relative rounded-2xl overflow-hidden h-[420px] shadow-lg cursor-pointer">
-        <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&q=80&w=800" alt="Toyota" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-90"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-        <div class="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white">
-          <span class="text-lg font-semibold tracking-wide">Toyota</span>
-          <button class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center group-hover:bg-white group-hover:text-black transition">
+      <div class="group relative bg-brand-card rounded-3xl overflow-hidden h-[480px] border border-brand-border hover:border-brand-red/50 hover:shadow-[0_0_30px_rgba(213,0,28,0.2)] transition-all duration-500 cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&q=80&w=800" alt="Toyota" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out brightness-75 group-hover:brightness-90"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+        <div class="absolute top-6 left-6">
+          <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white/80 text-[10px] font-semibold tracking-widest uppercase px-3.5 py-1 rounded-full">3 Series Models</span>
+        </div>
+        <div class="absolute bottom-8 left-8 right-8 flex items-end justify-between text-white">
+          <div>
+            <span class="text-[10px] text-brand-red font-bold tracking-[0.25em] uppercase block mb-1">Heritage</span>
+            <span class="font-display text-3xl font-extrabold tracking-wider uppercase">Toyota</span>
+          </div>
+          <button class="w-11 h-11 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:bg-brand-red group-hover:border-brand-red group-hover:shadow-[0_0_15px_rgba(213,0,28,0.6)] transition duration-300">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
           </button>
         </div>
       </div>
 
-      <div class="group relative rounded-2xl overflow-hidden h-[420px] shadow-lg cursor-pointer">
-        <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&q=80&w=800" alt="Kia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-90"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-        <div class="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white">
-          <span class="text-lg font-semibold tracking-wide">Kia</span>
-          <button class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center group-hover:bg-white group-hover:text-black transition">
+      <div class="group relative bg-brand-card rounded-3xl overflow-hidden h-[480px] border border-brand-border hover:border-brand-red/50 hover:shadow-[0_0_30px_rgba(213,0,28,0.2)] transition-all duration-500 cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&q=80&w=800" alt="Kia" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out brightness-75 group-hover:brightness-90"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+        <div class="absolute top-6 left-6">
+          <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white/80 text-[10px] font-semibold tracking-widest uppercase px-3.5 py-1 rounded-full">GT Editions</span>
+        </div>
+        <div class="absolute bottom-8 left-8 right-8 flex items-end justify-between text-white">
+          <div>
+            <span class="text-[10px] text-brand-red font-bold tracking-[0.25em] uppercase block mb-1">Heritage</span>
+            <span class="font-display text-3xl font-extrabold tracking-wider uppercase">Kia</span>
+          </div>
+          <button class="w-11 h-11 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:bg-brand-red group-hover:border-brand-red group-hover:shadow-[0_0_15px_rgba(213,0,28,0.6)] transition duration-300">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
           </button>
         </div>
       </div>
 
-      <div class="group relative rounded-2xl overflow-hidden h-[420px] shadow-lg cursor-pointer">
-        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&q=80&w=800" alt="Honda" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-90"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-        <div class="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white">
-          <span class="text-lg font-semibold tracking-wide">Honda</span>
-          <button class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center group-hover:bg-white group-hover:text-black transition">
+      <div class="group relative bg-brand-card rounded-3xl overflow-hidden h-[480px] border border-brand-border hover:border-brand-red/50 hover:shadow-[0_0_30px_rgba(213,0,28,0.2)] transition-all duration-500 cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&q=80&w=800" alt="Honda" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out brightness-75 group-hover:brightness-90"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+        <div class="absolute top-6 left-6">
+          <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white/80 text-[10px] font-semibold tracking-widest uppercase px-3.5 py-1 rounded-full">Type R Series</span>
+        </div>
+        <div class="absolute bottom-8 left-8 right-8 flex items-end justify-between text-white">
+          <div>
+            <span class="text-[10px] text-brand-red font-bold tracking-[0.25em] uppercase block mb-1">Heritage</span>
+            <span class="font-display text-3xl font-extrabold tracking-wider uppercase">Honda</span>
+          </div>
+          <button class="w-11 h-11 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:bg-brand-red group-hover:border-brand-red group-hover:shadow-[0_0_15px_rgba(213,0,28,0.6)] transition duration-300">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
           </button>
         </div>
       </div>
 
-      <div class="group relative rounded-2xl overflow-hidden h-[420px] shadow-lg cursor-pointer">
-        <img src="https://images.unsplash.com/photo-1616422285623-13ff0162193c?auto=format&fit=crop&q=80&w=800" alt="Hyundai" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-90"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-        <div class="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white">
-          <span class="text-lg font-semibold tracking-wide">Hyundai</span>
-          <button class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center group-hover:bg-white group-hover:text-black transition">
+      <div class="group relative bg-brand-card rounded-3xl overflow-hidden h-[480px] border border-brand-border hover:border-brand-red/50 hover:shadow-[0_0_30px_rgba(213,0,28,0.2)] transition-all duration-500 cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1616422285623-13ff0162193c?auto=format&fit=crop&q=80&w=800" alt="Hyundai" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out brightness-75 group-hover:brightness-90"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+        <div class="absolute top-6 left-6">
+          <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white/80 text-[10px] font-semibold tracking-widest uppercase px-3.5 py-1 rounded-full">N Performance</span>
+        </div>
+        <div class="absolute bottom-8 left-8 right-8 flex items-end justify-between text-white">
+          <div>
+            <span class="text-[10px] text-brand-red font-bold tracking-[0.25em] uppercase block mb-1">Heritage</span>
+            <span class="font-display text-3xl font-extrabold tracking-wider uppercase">Hyundai</span>
+          </div>
+          <button class="w-11 h-11 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:bg-brand-red group-hover:border-brand-red group-hover:shadow-[0_0_15px_rgba(213,0,28,0.6)] transition duration-300">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
           </button>
         </div>
@@ -161,148 +207,252 @@
     </div>
   </section>
 
-  <section id="inventory" class="py-12 px-4 sm:px-8 max-w-7xl mx-auto">
-    <div class="text-center mb-10">
-      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">New Arrivals</h2>
+  <section id="inventory" class="py-20 px-4 sm:px-12 max-w-7xl mx-auto relative z-10">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b border-brand-border pb-8">
+      <div>
+        <span class="text-brand-red font-bold text-[11px] tracking-[0.3em] uppercase block mb-1">Exclusive Collection</span>
+        <h2 class="font-display text-4xl sm:text-6xl font-extrabold text-white tracking-tight uppercase">New Arrivals</h2>
+      </div>
+      
+      <div class="flex items-center gap-2 bg-white/5 border border-white/10 p-1 rounded-full mt-6 md:mt-0">
+        <button class="bg-brand-red text-white text-[10px] font-bold uppercase tracking-widest px-5 py-2 rounded-full shadow-[0_0_10px_rgba(213,0,28,0.4)]">All</button>
+        <button class="text-gray-400 hover:text-white text-[10px] font-bold uppercase tracking-widest px-5 py-2 transition">Electric</button>
+        <button class="text-gray-400 hover:text-white text-[10px] font-bold uppercase tracking-widest px-5 py-2 transition">Hybrid</button>
+      </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
       
-      <div class="group relative rounded-2xl overflow-hidden h-[340px] sm:h-[380px] shadow-md cursor-pointer">
-        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80&w=1000" alt="2026 Toyota RAV 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-        
-        <div class="absolute bottom-20 left-6 flex gap-2">
-          <span class="bg-black/40 backdrop-blur-md border border-white/20 text-white text-[11px] px-3 py-1 rounded-full">Electric</span>
-          <span class="bg-black/40 backdrop-blur-md border border-white/20 text-white text-[11px] px-3 py-1 rounded-full">Hybrid</span>
-          <span class="bg-black/40 backdrop-blur-md border border-white/20 text-white text-[11px] px-3 py-1 rounded-full">Gasoline</span>
+      <div class="group relative bg-brand-card rounded-3xl overflow-hidden border border-brand-border hover:border-brand-red/50 hover:shadow-[0_0_40px_rgba(213,0,28,0.25)] transition-all duration-500 cursor-pointer flex flex-col">
+        <div class="relative h-[320px] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80&w=1000" alt="2026 Toyota RAV 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out brightness-80 group-hover:brightness-95"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+          
+          <div class="absolute top-6 left-6 flex gap-2">
+            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] uppercase tracking-widest px-3.5 py-1 rounded-full font-bold">Electric</span>
+            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] uppercase tracking-widest px-3.5 py-1 rounded-full font-bold">Hybrid</span>
+          </div>
         </div>
 
-        <div class="absolute bottom-6 left-6 right-6 flex items-end justify-between text-white">
-          <div>
-            <p class="text-2xl font-bold">₦250,000,000</p>
-            <p class="text-xs text-gray-300 font-light mt-0.5">2026 Toyota RAV 4</p>
+        <div class="px-8 pt-4 pb-8 flex flex-col justify-between flex-grow bg-brand-card">
+          <div class="grid grid-cols-3 gap-4 border-y border-white/5 py-4 mb-6">
+            <div>
+              <span class="text-[9px] uppercase tracking-widest text-gray-500 block">0-100 KM/H</span>
+              <span class="font-display text-sm font-bold text-white">5.8 s</span>
+            </div>
+            <div>
+              <span class="text-[9px] uppercase tracking-widest text-gray-500 block">Top Speed</span>
+              <span class="font-display text-sm font-bold text-white">200 km/h</span>
+            </div>
+            <div>
+              <span class="text-[9px] uppercase tracking-widest text-gray-500 block">Power</span>
+              <span class="font-display text-sm font-bold text-white">302 hp</span>
+            </div>
           </div>
-          <button class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center group-hover:bg-white group-hover:text-black transition">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-          </button>
+
+          <div class="flex items-end justify-between">
+            <div>
+              <p class="text-[10px] text-brand-red font-bold tracking-[0.25em] uppercase mb-1">2026 Model</p>
+              <h3 class="font-display text-2xl font-bold tracking-wide text-white">Toyota RAV 4</h3>
+              <p class="font-sans text-xl text-gray-300 font-light mt-1">₦250,000,000</p>
+            </div>
+            <button class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:bg-brand-red group-hover:border-brand-red group-hover:shadow-[0_0_20px_rgba(213,0,28,0.7)] transition duration-300">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+          </div>
         </div>
       </div>
 
-      <div class="group relative rounded-2xl overflow-hidden h-[340px] sm:h-[380px] shadow-md cursor-pointer">
-        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=1000" alt="2026 Lexus" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-        
-        <div class="absolute bottom-20 left-6 flex gap-2">
-          <span class="bg-black/40 backdrop-blur-md border border-white/20 text-white text-[11px] px-3 py-1 rounded-full">Electric</span>
-          <span class="bg-black/40 backdrop-blur-md border border-white/20 text-white text-[11px] px-3 py-1 rounded-full">Hybrid</span>
-          <span class="bg-black/40 backdrop-blur-md border border-white/20 text-white text-[11px] px-3 py-1 rounded-full">Gasoline</span>
+      <div class="group relative bg-brand-card rounded-3xl overflow-hidden border border-brand-border hover:border-brand-red/50 hover:shadow-[0_0_40px_rgba(213,0,28,0.25)] transition-all duration-500 cursor-pointer flex flex-col">
+        <div class="relative h-[320px] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=1000" alt="2026 Lexus RX 350" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out brightness-80 group-hover:brightness-95"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+          
+          <div class="absolute top-6 left-6 flex gap-2">
+            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] uppercase tracking-widest px-3.5 py-1 rounded-full font-bold">Gasoline</span>
+          </div>
         </div>
 
-        <div class="absolute bottom-6 left-6 right-6 flex items-end justify-between text-white">
-          <div>
-            <p class="text-2xl font-bold">₦250,000,000</p>
-            <p class="text-xs text-gray-300 font-light mt-0.5">2026 Toyota RAV 4</p>
+        <div class="px-8 pt-4 pb-8 flex flex-col justify-between flex-grow bg-brand-card">
+          <div class="grid grid-cols-3 gap-4 border-y border-white/5 py-4 mb-6">
+            <div>
+              <span class="text-[9px] uppercase tracking-widest text-gray-500 block">0-100 KM/H</span>
+              <span class="font-display text-sm font-bold text-white">7.2 s</span>
+            </div>
+            <div>
+              <span class="text-[9px] uppercase tracking-widest text-gray-500 block">Top Speed</span>
+              <span class="font-display text-sm font-bold text-white">210 km/h</span>
+            </div>
+            <div>
+              <span class="text-[9px] uppercase tracking-widest text-gray-500 block">Power</span>
+              <span class="font-display text-sm font-bold text-white">275 hp</span>
+            </div>
           </div>
-          <button class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center group-hover:bg-white group-hover:text-black transition">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-          </button>
+
+          <div class="flex items-end justify-between">
+            <div>
+              <p class="text-[10px] text-brand-red font-bold tracking-[0.25em] uppercase mb-1">2026 Model</p>
+              <h3 class="font-display text-2xl font-bold tracking-wide text-white">Lexus RX 350</h3>
+              <p class="font-sans text-xl text-gray-300 font-light mt-1">₦250,000,000</p>
+            </div>
+            <button class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:bg-brand-red group-hover:border-brand-red group-hover:shadow-[0_0_20px_rgba(213,0,28,0.7)] transition duration-300">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+          </div>
         </div>
       </div>
 
-      <div class="group relative rounded-2xl overflow-hidden h-[340px] sm:h-[380px] shadow-md cursor-pointer">
-        <img src="https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?auto=format&fit=crop&q=80&w=1000" alt="2026 Civic Type R" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-        
-        <div class="absolute bottom-20 left-6 flex gap-2">
-          <span class="bg-black/40 backdrop-blur-md border border-white/20 text-white text-[11px] px-3 py-1 rounded-full">Electric</span>
-          <span class="bg-black/40 backdrop-blur-md border border-white/20 text-white text-[11px] px-3 py-1 rounded-full">Hybrid</span>
-          <span class="bg-black/40 backdrop-blur-md border border-white/20 text-white text-[11px] px-3 py-1 rounded-full">Gasoline</span>
+      <div class="group relative bg-brand-card rounded-3xl overflow-hidden border border-brand-border hover:border-brand-red/50 hover:shadow-[0_0_40px_rgba(213,0,28,0.25)] transition-all duration-500 cursor-pointer flex flex-col">
+        <div class="relative h-[320px] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?auto=format&fit=crop&q=80&w=1000" alt="2026 Civic Type R" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out brightness-80 group-hover:brightness-95"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+          
+          <div class="absolute top-6 left-6 flex gap-2">
+            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] uppercase tracking-widest px-3.5 py-1 rounded-full font-bold">Sport</span>
+          </div>
         </div>
 
-        <div class="absolute bottom-6 left-6 right-6 flex items-end justify-between text-white">
-          <div>
-            <p class="text-2xl font-bold">₦250,000,000</p>
-            <p class="text-xs text-gray-300 font-light mt-0.5">2026 Toyota RAV 4</p>
+        <div class="px-8 pt-4 pb-8 flex flex-col justify-between flex-grow bg-brand-card">
+          <div class="grid grid-cols-3 gap-4 border-y border-white/5 py-4 mb-6">
+            <div>
+              <span class="text-[9px] uppercase tracking-widest text-gray-500 block">0-100 KM/H</span>
+              <span class="font-display text-sm font-bold text-white">5.4 s</span>
+            </div>
+            <div>
+              <span class="text-[9px] uppercase tracking-widest text-gray-500 block">Top Speed</span>
+              <span class="font-display text-sm font-bold text-white">275 km/h</span>
+            </div>
+            <div>
+              <span class="text-[9px] uppercase tracking-widest text-gray-500 block">Power</span>
+              <span class="font-display text-sm font-bold text-white">315 hp</span>
+            </div>
           </div>
-          <button class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center group-hover:bg-white group-hover:text-black transition">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-          </button>
+
+          <div class="flex items-end justify-between">
+            <div>
+              <p class="text-[10px] text-brand-red font-bold tracking-[0.25em] uppercase mb-1">2026 Model</p>
+              <h3 class="font-display text-2xl font-bold tracking-wide text-white">Civic Type R</h3>
+              <p class="font-sans text-xl text-gray-300 font-light mt-1">₦250,000,000</p>
+            </div>
+            <button class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:bg-brand-red group-hover:border-brand-red group-hover:shadow-[0_0_20px_rgba(213,0,28,0.7)] transition duration-300">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+          </div>
         </div>
       </div>
 
-      <div class="group relative rounded-2xl overflow-hidden h-[340px] sm:h-[380px] shadow-md cursor-pointer">
-        <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&q=80&w=1000" alt="2026 Toyota Camry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-        
-        <div class="absolute bottom-20 left-6 flex gap-2">
-          <span class="bg-black/40 backdrop-blur-md border border-white/20 text-white text-[11px] px-3 py-1 rounded-full">Electric</span>
-          <span class="bg-black/40 backdrop-blur-md border border-white/20 text-white text-[11px] px-3 py-1 rounded-full">Hybrid</span>
-          <span class="bg-black/40 backdrop-blur-md border border-white/20 text-white text-[11px] px-3 py-1 rounded-full">Gasoline</span>
+      <div class="group relative bg-brand-card rounded-3xl overflow-hidden border border-brand-border hover:border-brand-red/50 hover:shadow-[0_0_40px_rgba(213,0,28,0.25)] transition-all duration-500 cursor-pointer flex flex-col">
+        <div class="relative h-[320px] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&q=80&w=1000" alt="2026 Toyota Camry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out brightness-80 group-hover:brightness-95"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+          
+          <div class="absolute top-6 left-6 flex gap-2">
+            <span class="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] uppercase tracking-widest px-3.5 py-1 rounded-full font-bold">Hybrid</span>
+          </div>
         </div>
 
-        <div class="absolute bottom-6 left-6 right-6 flex items-end justify-between text-white">
-          <div>
-            <p class="text-2xl font-bold">₦250,000,000</p>
-            <p class="text-xs text-gray-300 font-light mt-0.5">2026 Toyota RAV 4</p>
+        <div class="px-8 pt-4 pb-8 flex flex-col justify-between flex-grow bg-brand-card">
+          <div class="grid grid-cols-3 gap-4 border-y border-white/5 py-4 mb-6">
+            <div>
+              <span class="text-[9px] uppercase tracking-widest text-gray-500 block">0-100 KM/H</span>
+              <span class="font-display text-sm font-bold text-white">6.8 s</span>
+            </div>
+            <div>
+              <span class="text-[9px] uppercase tracking-widest text-gray-500 block">Top Speed</span>
+              <span class="font-display text-sm font-bold text-white">215 km/h</span>
+            </div>
+            <div>
+              <span class="text-[9px] uppercase tracking-widest text-gray-500 block">Power</span>
+              <span class="font-display text-sm font-bold text-white">225 hp</span>
+            </div>
           </div>
-          <button class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center group-hover:bg-white group-hover:text-black transition">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-          </button>
+
+          <div class="flex items-end justify-between">
+            <div>
+              <p class="text-[10px] text-brand-red font-bold tracking-[0.25em] uppercase mb-1">2026 Model</p>
+              <h3 class="font-display text-2xl font-bold tracking-wide text-white">Toyota Camry</h3>
+              <p class="font-sans text-xl text-gray-300 font-light mt-1">₦250,000,000</p>
+            </div>
+            <button class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:bg-brand-red group-hover:border-brand-red group-hover:shadow-[0_0_20px_rgba(213,0,28,0.7)] transition duration-300">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+          </div>
         </div>
       </div>
 
     </div>
 
     <div class="text-center">
-      <a href="#" class="inline-block bg-white border border-blue-600 text-blue-600 font-semibold text-sm px-8 py-3 rounded-full hover:bg-blue-600 hover:text-white transition duration-200 shadow-sm">
-        View all Cars
+      <a href="#" class="inline-flex items-center gap-3 bg-gradient-to-r from-brand-red to-red-700 text-white font-bold text-xs tracking-[0.25em] uppercase px-12 py-5 rounded-full shadow-[0_0_25px_rgba(213,0,28,0.5)] hover:shadow-[0_0_40px_rgba(213,0,28,0.8)] hover:scale-105 transition-all duration-300">
+        Browse Entire Inventory
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
       </a>
     </div>
   </section>
 
-  <section class="mt-12 relative w-full">
-    <div class="w-full h-80 sm:h-[400px] overflow-hidden">
+  <section class="mt-28 relative w-full border-t border-brand-border">
+    <div class="w-full h-[480px] overflow-hidden relative">
       <iframe 
         title="Abuja Map Location"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63048.88748430758!2d7.4363297!3d9.0764785!2m3!1f0!2f0!3f0!2m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0bac7f13b63d%3A0x2897f2590eb8201a!2sAbuja%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1700000000000!5m2!1sen!2sng" 
-        class="w-full h-full border-0 grayscale opacity-90 hover:grayscale-0 transition duration-300" 
+        class="w-full h-full border-0 grayscale contrast-125 brightness-75 hover:grayscale-0 transition duration-700" 
         allowfullscreen="" 
         loading="lazy">
       </iframe>
+      <div class="absolute inset-0 bg-gradient-to-b from-brand-dark via-transparent to-brand-dark pointer-events-none"></div>
     </div>
 
-    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10">
+    <div class="absolute bottom-12 left-1/2 -translate-x-1/2 z-10">
       <a 
         href="https://maps.google.com" 
         target="_blank" 
         rel="noopener noreferrer"
-        class="inline-block bg-white border border-blue-600 text-blue-600 font-semibold text-sm px-8 py-3 rounded-full hover:bg-blue-600 hover:text-white transition duration-200 shadow-lg"
+        class="inline-flex items-center gap-3 bg-brand-red hover:bg-red-700 text-white font-bold text-xs tracking-[0.25em] uppercase px-10 py-5 rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(213,0,28,0.6)] hover:scale-105"
       >
-        Get Directions
+        <span>Locate Showroom</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
       </a>
     </div>
   </section>
 
-  <footer class="bg-neutral-900 text-gray-400 py-12 px-4 sm:px-8 border-t border-neutral-800">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+  <footer class="bg-black text-gray-500 py-20 px-4 sm:px-12 border-t border-brand-border relative z-10">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
       <div class="text-center md:text-left">
-        <span class="text-white font-bold text-xl">Abuja Cars</span>
-        <p class="text-xs text-gray-500 mt-1">Your trusted destination for quality new and pre-owned cars.</p>
+        <a href="#" class="font-display font-bold text-xl tracking-[0.25em] uppercase text-white flex items-center justify-center md:justify-start gap-1.5">
+          <span>Abuja</span><span class="w-2 h-2 rounded-full bg-brand-red inline-block shadow-[0_0_10px_#D5001C]"></span><span class="text-gray-400 font-light">Cars</span>
+        </a>
+        <p class="text-[11px] uppercase tracking-[0.2em] text-gray-500 mt-2">Precision engineered luxury curation — Abuja, Nigeria</p>
       </div>
 
-      <ul class="flex flex-wrap justify-center gap-6 text-sm">
-        <li><a href="#" class="hover:text-white transition">Home</a></li>
-        <li><a href="#inventory" class="hover:text-white transition">Inventory</a></li>
-        <li><a href="#" class="hover:text-white transition">Electric Cars</a></li>
-        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+      <ul class="flex flex-wrap justify-center gap-8 text-[11px] font-semibold uppercase tracking-[0.2em] text-gray-300">
+        <li><a href="#" class="hover:text-brand-red transition">Models</a></li>
+        <li><a href="#inventory" class="hover:text-brand-red transition">Inventory</a></li>
+        <li><a href="#" class="hover:text-brand-red transition">E-Performance</a></li>
+        <li><a href="#" class="hover:text-brand-red transition">Contact</a></li>
       </ul>
 
-      <p class="text-xs text-gray-600">
-        &copy; 2026 Abuja Cars. All rights reserved.
+      <p class="text-[10px] uppercase tracking-[0.2em] text-gray-600">
+        © 2026 Abuja Cars. Built for power.
       </p>
     </div>
   </footer>
 
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    menuBtn.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>';
+      } else {
+        mobileMenu.classList.add('hidden');
+        menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path>';
+      }
+    });
+  </script>
 </body>
 </html>
